@@ -1,0 +1,9 @@
+[package]
+name = "nft-verifier-program"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+nft_verifier_lib = { path = "../lib" }
+sp1-zkvm = "4.2.0"
+bincode = "1.3"
