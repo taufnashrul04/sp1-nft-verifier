@@ -27,7 +27,7 @@ struct Args {
     #[arg(long)]
     prove: bool,
     /// RPC URL (optional, default ke Berachain public)
-    #[arg(long, default_value = "https://arb1.arbitrum.io/rpc")]
+    #[arg(long, default_value = "https://rpc.berachain.com")]
     rpc_url: String,
 }
 
