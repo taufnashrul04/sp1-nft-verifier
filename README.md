@@ -131,7 +131,8 @@ cargo run --release --bin main -- \
   --token-id 479
   --rpc-url https://rpc-public-of-your-nft-chain
 ```
-
+#notes
+ADD RUST_LOG=info before cargo run to show log
 **Parameters:**
 - `--execute` : Run the EVM logic and check the NFT (no proof)
 - `--prove`   : Generate a proof using the configured `SP1_PROVER` backend
