@@ -132,13 +132,13 @@ cargo run --release --bin main -- \
   --rpc-url https://rpc-public-of-your-nft-chain
 ```
 #notes
-ADD RUST_LOG=info before cargo run to show log
 **Parameters:**
 - `--execute` : Run the EVM logic and check the NFT (no proof)
 - `--prove`   : Generate a proof using the configured `SP1_PROVER` backend
 - `--wallet`  : EVM wallet address for the NFT owner (example: `0x1234567890abcdef1234567890abcdef12345678`)
 - `--ca`      : NFT contract address
 - `--token-id`: Token ID of the NFT to verify
+- `RUST_LOG=info`: Before cargo run to show log
 
 > For details on EVM options and integration, see the [SP1 EVM Documentation](https://docs.succinct.xyz/docs/sp1/evm/overview).
 
