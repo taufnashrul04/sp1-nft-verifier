@@ -109,7 +109,6 @@ You can run either mode using CLI arguments.
 cargo run --release --bin main -- \
   --execute \
   --wallet 0x1234567890abcdef1234567890abcdef12345678 \
-  --ca 0xb40ba1951b9b3be813f5a4ceafed29eb08d5358d \
   --token-id 479
 ```
 
@@ -119,8 +118,18 @@ or, to generate a proof:
 cargo run --release --bin main -- \
   --prove \
   --wallet 0x1234567890abcdef1234567890abcdef12345678 \
+  --token-id 479
+```
+#notes
+this command above is for verify steady teddy nft
+if you want a verify another nft use this command
+```bash
+cargo run --release --bin main -- \
+  --execute \ or prove
+  --wallet 0x1234567890abcdef1234567890abcdef12345678 \
   --ca 0xb40ba1951b9b3be813f5a4ceafed29eb08d5358d \
   --token-id 479
+  --rpc-url https://rpc-public-of-your-nft-chain
 ```
 
 **Parameters:**
